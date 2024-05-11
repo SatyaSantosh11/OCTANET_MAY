@@ -1,0 +1,101 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px 2.5px 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul{
+  float: right
+}
+nav ul li{
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+  padding: 20px;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+  text-decoration-color: #27ae71;
+  transition:0.5s ease;
+}
+
+.logo {
+ width: 150px;
+ height: 150px;
+}
+
+.hero {
+  background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url('/bg.jpeg');
+  background-size: cover;
+  color: #fff;
+  padding: 250px 20px;
+  text-align: center;
+  background-position: center;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta:hover {
+  background-color: #2ecc71;
+}
+
+.about, .testimonials {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  cursor: pointer;
+}
+.about h2:hover {
+  color: #27ae71;
+  transition: 0.3s;
+}
+
+.testimonials h2 {
+  cursor: pointer;
+}
+.testimonials h2:hover {
+  color: #27ae71;
+  transition: 0.3s;
+}
+.testimonial {
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
