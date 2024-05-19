@@ -1,101 +1,113 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 5px 2.5px 5px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-nav ul{
-  float: right
-}
-nav ul li{
-  text-decoration: none;
-  display: inline-block;
-  list-style: none;
-  padding: 20px;
-}
-nav ul li a:hover{
-  text-decoration: underline;
-  text-decoration-color: #27ae71;
-  transition:0.5s ease;
-}
-
-.logo {
- width: 150px;
- height: 150px;
-}
-
-.hero {
-  background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url('/bg.jpeg');
-  background-size: cover;
-  color: #fff;
-  padding: 250px 20px;
-  text-align: center;
-  background-position: center;
-}
-
-.hero h1 {
-  margin-bottom: 20px;
-  font-size: 32px;
-}
-
-.hero p {
-  margin-bottom: 20px;
-}
-
-.cta {
-  background-color: #27ae60;
-  color: #fff;
-  padding: 10px 30px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.cta:hover {
-  background-color: #2ecc71;
-}
-
-.about, .testimonials {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.about h2 {
-  cursor: pointer;
-}
-.about h2:hover {
-  color: #27ae71;
-  transition: 0.3s;
-}
-
-.testimonials h2 {
-  cursor: pointer;
-}
-.testimonials h2:hover {
-  color: #27ae71;
-  transition: 0.3s;
-}
-.testimonial {
-  background-color: #f9f9f9;
-  margin: 20px auto;
-  padding: 20px;
-  width: 80%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #a2a49b;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #1444b3;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #915f5f;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #461a54;}
